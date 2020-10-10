@@ -5,9 +5,9 @@ import {
   Text
 } from './styles';
 
-const Button = ({ children, height }) => (
-  <Container height={height}>
-    {children && <Text>{children}</Text>}
+const Button = ({ children, height, background, color }) => (
+  <Container height={height} background={background}>
+    {children && <Text color={color}>{children}</Text>}
   </Container>
 );
 

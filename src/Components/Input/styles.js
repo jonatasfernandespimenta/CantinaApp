@@ -6,7 +6,6 @@ export const Touchable = styled.TouchableWithoutFeedback`
 
 export const Container = styled.View`
   border: 1px;
-  width: 70%;
   margin: 5px;
   border-radius: 100px;
   padding: 4px 8px;
@@ -19,8 +18,9 @@ export const Container = styled.View`
 export const IconContainer = styled.View`
   justify-content: center;
   align-items: center;
+  margin: 8px;
 `;
 
 export const Input = styled.TextInput`
-  color: white;
+  color: black;
 `;

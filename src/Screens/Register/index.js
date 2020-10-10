@@ -19,12 +19,12 @@ const Home = () => {
   return(
     <Container source={image}>
       <Text>Seja bem-vindo</Text>
-      <Input placeholder='Seu nome' placeholderTextColor="white" height={35} />
-      <Input placeholder='Email' placeholderTextColor="white" height={35} />
-      <Input placeholder='Senha' placeholderTextColor="white" height={35} />
-      <Input placeholder='Confirme sua senha' placeholderTextColor="white" height={35} />
+      <Input placeholder='Seu nome' width={200} placeholderTextColor="white" height={35} />
+      <Input placeholder='Email' width={200} placeholderTextColor="white" height={35} />
+      <Input placeholder='Senha' width={200} secureTextEntry={true} placeholderTextColor="white" height={35} />
+      <Input placeholder='Confirme sua senha' width={200} secureTextEntry={true} placeholderTextColor="white" height={35} />
 
-      <Button marginY={10} width={220} height={40} onPress={handleRegisterCardClick}>Cadastrar</Button>
+      <Button background={'d99800'} marginY={10} width={220} height={40} onPress={handleRegisterCardClick}>Cadastrar</Button>
 
     </Container>
   );

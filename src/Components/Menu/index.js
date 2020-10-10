@@ -1,35 +1,49 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { Container, Info } from './styles';
+import { Navbar, Info, BlackContainer, RedContainer, YellowContainer } from './styles';
 
 const Menu = () => {
+
+  const navigation = useNavigation();
+
+  const handleCardapioClick = () => {
+    navigation.navigate('Cardapio');
+  };
+
+  const handleHomeClick = () => {
+    navigation.navigate('Home');
+  };
+
+  const handleOrdersClick = () => {
+    navigation.navigate('Orders');
+  };
+
+  const handleProfileClick = () => {
+    navigation.navigate('Profile');
+  };
+  
   return(
     <>
-    <Container>
-      <TouchableOpacity style={{ marginRight: 50, marginLeft: 10}}>
-        <Icon name={'home'} size={30} />
+    <Navbar>
+      <TouchableOpacity onPress={handleHomeClick}>
+        <Icon name={'home'} size={30}  color={'gray'}/>
       </TouchableOpacity>
 
-      <TouchableOpacity style={{ marginRight: 50}}>
-        <Icon name={'book-open'} size={30} />
+      <TouchableOpacity onPress={handleCardapioClick}>
+        <Icon name={'book-open'} size={30} color={'gray'} />
       </TouchableOpacity>
       
-      <TouchableOpacity style={{ marginRight: 50}}>
-        <Icon name={'cart'} size={30} />
+      <TouchableOpacity onPress={handleOrdersClick}>
+        <Icon name={'cart'} size={30}  color={'gray'}/>
       </TouchableOpacity>
 
-      <TouchableOpacity style={{ marginRight: 60}}>
-        <Icon name={'account'} size={30} />
+      <TouchableOpacity onPress={handleProfileClick}>
+        <Icon name={'account'} size={30} color={'gray'} />
       </TouchableOpacity>
-    </Container>
-
-    <Info>
-      <TouchableOpacity style={{ marginRight: 60}}>
-        <Icon name={'basket-outline'} size={30} color={'white'} />
-      </TouchableOpacity>
-    </Info>
+    </Navbar>
     </>
   );
 }

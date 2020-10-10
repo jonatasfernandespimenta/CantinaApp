@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import {
   Container,

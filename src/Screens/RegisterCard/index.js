@@ -20,12 +20,12 @@ const Home = () => {
   return(
     <Container source={image}>
       <Text>Cadastre seu cartao</Text>
-      <Input placeholder='Numero do cartão' placeholderTextColor="white" height={35} />
-      <Input placeholder='Nome do cartão' placeholderTextColor="white" height={35} />
-      <Input placeholder='Expira' placeholderTextColor="white" height={35} />
-      <Input placeholder='Tipo do cartão' placeholderTextColor="white" height={35} />
+      <Input placeholder='Numero do cartão' placeholderTextColor="white" width={200} height={35} />
+      <Input placeholder='Nome do cartão' placeholderTextColor="white" width={200} height={35} />
+      <Input placeholder='Expira' placeholderTextColor="white" width={200} height={35} />
+      <Input placeholder='Tipo do cartão' placeholderTextColor="white" width={200} height={35} />
 
-      <Button marginY={10} width={220} height={40}>Cadastrar cartão</Button>
+      <Button background={'d99800'} marginY={10} width={220} height={40}>Cadastrar cartão</Button>
 
       <TouchableOpacity onPress={handleHomeClick}>
         <P>ENTRAR NA CONTA</P>
